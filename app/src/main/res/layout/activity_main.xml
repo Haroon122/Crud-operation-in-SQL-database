@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/topTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Student Data"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/studentTxt"
+        android:layout_below="@id/topTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:text="Student Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editStudent"
+        android:layout_below="@id/studentTxt"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/edittext_bg">
+
+    </EditText>
+
+
+
+    <TextView
+        android:id="@+id/classTxt"
+        android:layout_below="@id/editStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:text="Student Class"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editClass"
+        android:layout_below="@id/classTxt"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/edittext_bg">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/rollTxt"
+        android:layout_below="@id/editClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:text="Student Roll no"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editroll"
+        android:layout_below="@id/rollTxt"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/edittext_bg">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/insertBtn"
+        android:layout_below="@id/editroll"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Insert Data"
+        android:textSize="20sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/checktBtn"
+        android:layout_below="@id/insertBtn"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Check Data"
+        android:textSize="20sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_below="@id/checktBtn"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Update Data"
+        android:textSize="20sp">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/DeleteBtn"
+        android:layout_below="@id/updateBtn"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Delete Data"
+        android:textSize="20sp">
+
+    </Button>
+
+
+
+
+</RelativeLayout>
